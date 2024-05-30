@@ -1,6 +1,8 @@
 package br.com.duarte.desafioumliphone.model;
 
-public class Ipod extends Iphone{
+import br.com.duarte.desafioumliphone.interfaces.Teclado;
+
+public class Ipod extends Iphone implements Teclado {
     private String musica;
     private String artista;
 

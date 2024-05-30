@@ -1,6 +1,8 @@
 package br.com.duarte.desafioumliphone.model;
 
-public class Phone extends Iphone{
+import br.com.duarte.desafioumliphone.interfaces.Teclado;
+
+public class Phone extends Iphone implements Teclado {
     private String numeroDeTelefone;
 
     public String getNumeroDeTelefone() {

@@ -1,6 +1,8 @@
 package br.com.duarte.desafioumliphone.model;
 
-public class Navegador extends Iphone {
+import br.com.duarte.desafioumliphone.interfaces.Teclado;
+
+public class Navegador extends Iphone implements Teclado {
     private String url;
 
     public String getUrl() {
