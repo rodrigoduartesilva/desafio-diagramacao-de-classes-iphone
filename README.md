@@ -44,18 +44,18 @@ classDiagram
     class Phone {
         -numeroDoTelefone:String
         
-        + realizarChamada(numeroDoTelefone)
-        + atenderChamada()
-        + verificarCorreioDeVoz()
+        +realizarChamada(numeroDoTelefone)
+        +atenderChamada()
+        +verificarCorreioDeVoz()
         +enviarSms(numeroDoTelefone)
     }
 
     class Navegador {
-        - url:String
+        -url:String
         
-        + acessarSite(url)
-        + atualizarSite()
-        + adicionarAba()
+        +acessarSite(url)
+        +atualizarSite()
+        +adicionarAba()
     }
 
     class iPhone {
