@@ -64,6 +64,15 @@ classDiagram
     iPhone --> iPod
     iPhone --> Phone
     iPhone --> Navegador
+    
+    interface Teclado{
+        +digitarValor()
+    }
+    
+    Teclado <-- iPod
+    Teclado <-- Phone
+    Teclado <-- Navegador
+    
 ```
 
 ### Instruções
