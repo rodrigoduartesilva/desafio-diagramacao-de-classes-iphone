@@ -69,9 +69,9 @@ classDiagram
         +digitarValor()
     }
     
-    Teclado <-implements- iPod
-    Teclado <-implements- Phone
-    Teclado <-implements- Navegador
+    Teclado <-- iPod
+    Teclado <-- Phone
+    Teclado <-- Navegador
     
 ```
 
