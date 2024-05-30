@@ -31,9 +31,14 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 
 ```mermaid
 classDiagram
-    class ReprodutorMusical {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class iPod {
+        -musica:String
+        -artista:String
+        
+        +tocarMusica(musica)
+        +selecionarArtista(artista)
+        +selecionarMusica(musica)
+        +pausarMusica(musica)
     }
 
     class AparelhoTelefonico {
