@@ -31,6 +31,15 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), você deve el
 
 ```mermaid
 classDiagram
+
+     class Teclado{
+        +digitarValor()
+     }
+    
+     Teclado <-- iPod
+     Teclado <-- Phone
+     Teclado <-- Navegador
+        
     class iPod {
         -musica:String
         -artista:String
@@ -64,14 +73,6 @@ classDiagram
     iPhone --> iPod
     iPhone --> Phone
     iPhone --> Navegador
-    
-    class Teclado{
-        +digitarValor()
-    }
-    
-    Teclado <-- iPod
-    Teclado <-- Phone
-    Teclado <-- Navegador
     
 ```
 
