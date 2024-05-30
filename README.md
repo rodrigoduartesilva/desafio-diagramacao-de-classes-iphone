@@ -41,22 +41,29 @@ classDiagram
         +pausarMusica(musica)
     }
 
-    class AparelhoTelefonico {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class Phone {
+        -numeroDoTelefone:String
+        
+        + realizarChamada(numeroDoTelefone)
+        + atenderChamada()
+        + verificarCorreioDeVoz()
+        +enviarSms(numeroDoTelefone)
     }
 
-    class NavegadorInternet {
-        +exemploMetodo1()
-        +exemploMetodo2(String exemplo)
+    class Navegador {
+        - url:String
+        
+        + acessarSite(url)
+        + atualizarSite()
+        + adicionarAba()
     }
 
     class iPhone {
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    iPhone --> iPod
+    iPhone --> Phone
+    iPhone --> Navegador
 ```
 
 ### Instruções
