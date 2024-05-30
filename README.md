@@ -65,13 +65,13 @@ classDiagram
     iPhone --> Phone
     iPhone --> Navegador
     
-    interface Teclado{
+    class Teclado{
         +digitarValor()
     }
     
-    Teclado <-- iPod
-    Teclado <-- Phone
-    Teclado <-- Navegador
+    Teclado <-implements- iPod
+    Teclado <-implements- Phone
+    Teclado <-implements- Navegador
     
 ```
 
